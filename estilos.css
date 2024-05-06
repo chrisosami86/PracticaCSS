@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background: rgb(66,66,69);
+    background: radial-gradient(circle, rgba(66,66,69,0.9500175070028011) 34%, rgba(61,61,62,1) 61%, rgba(29,29,29,1) 100%);
+    min-height: 100dvh;
+}
+
+h1, h2, h3, h4{
+    text-wrap: balance;
+}
+
+p{
+    text-wrap: pretty;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.menu{
+    position: relative;
+    position: fixed;
+    color: #EAEAE8;
+    background-color:#076960;
+    z-index: 1;
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+
+.menu .fa-bars{
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;    
+    z-index: 5;
+}
+
+.menu .menu__ul{
+    display: none;
+    list-style: none;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.menu .menu__ul li a{
+    text-decoration: none;
+    color: #EAEAE8;
+    transition: border 0.5s, color 0.5s;
+}
+
+.titulos{
+    transition: all 2s;
+}
+
+.menu .menu__ul li a:hover{
+    border-bottom: 2px solid salmon;
+    color: #fff;
+}
+
+.ul__img a{
+    display: block;
+    height: 30px;
+}
+
+.ul__img{
+    height: 30px;
+    transition: all 0.1s;
+}
+
+.ul__img:hover{
+    scale: 1.05;
+}
+
+
+.menu .menu__ul-responsive{
+    position: absolute;
+    background-color:#07998C;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    z-index: 0;
+    margin-top: -1000px;
+    transition: margin 1s;
+}
+
+/*
+.menu:hover>.menu__ul-responsive{
+    margin: 0;
+}*/
+
+.menu .menu__ul-responsive li{
+    margin: 30px 0;
+    list-style: none;
+}
+
+.menu .menu__ul-responsive li a{
+    text-decoration: none;
+    opacity: 1;
+    color: #EAEAE8;
+}
+
+
+.head{
+    color: #EAEAE8;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    align-items: center;
+}
+
+.head__container{
+    padding: 10px;
+}
+.head__container .head__h1{
+    color:#0FC2B2;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.head .head__img{
+    width: 100%;
+}
+.head__container .head__p{
+    font-size: 27px;
+}
+
+.head .head__p span{
+    color: #E2CB4C;
+}
+
+.titulos__container{
+    color: #EAEAE8;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.titulos .titulos__h1{
+    color:#0FC2B2;
+    padding: 5px;
+    border-bottom: 2px solid #0FC2B2;
+    text-align: center;
+}
+
+
+.titulos__container{
+    padding: 30px;
+}
+
+.titulos__container .titulos__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: #444;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px #076960;
+}
+
+
+.titulos__card .card__img{
+    padding: 20px;
+    width: 90%;
+    border-radius: 30px;
+}
+
+.titulos__card .card__container .container__h2{
+    color:#0FC2B2;
+}
+
+.titulos__card .card__container .container__p{
+    padding: 10px 0;
+    font-size: 19px;
+}
+
+.titulos__card .card__container .container__p span{
+    color: #E2CB4C;
+}
+
+
+.titulos__card .card__container .container__boton a{
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #EAEAE8;
+    background-color: #0FC2B2;
+
+}
+
+.titulos__card .card__container .container__boton{
+    margin: 15px 0;
+}
+
+.crono__container1{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #EAEAE8;
+    align-items: center;
+    gap: 20px;
+}
+.crono__container1 .container1__h2{
+    color:#0FC2B2;
+}
+
+.linea0__img{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px 0;
+    filter: drop-shadow(0px 0px 15px #fff);
+    transition: all 0.1s;
+}
+
+.linea0__img:hover{
+    scale: 1.2;
+}
+
+.crono__container2{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    color: #EAEAE8;
+    font-size: 15px;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
+}
+
+.linea1__h2, .linea2__h2, .linea3__h2{
+    text-align: center;
+    color:#0FC2B2;
+}
+
+.linea1__img, .linea2__img, .linea3__img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 5px;
+    filter: drop-shadow(0px 0px 15px #fff);
+    transition: all 0.1s;
+}
+.linea1__img:hover,.linea2__img:hover,.linea3__img:hover {
+    scale: 1.2;
+}
+
+.creador{
+    color: #EAEAE8;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    align-items: center;
+}
+
+.creador__h1{
+    color:#0FC2B2;
+    padding: 5px;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+.creador__p{
+    padding: 10px 40px;
+}
+
+.creador__p span{
+    color: #E2CB4C;
+}
+.creador a{
+    width: 50%;
+}
+.creador__img{
+    display: block;
+    width: 90%;
+    border-radius: 50%;
+    border: 2px solid #07998C;
+    object-fit: cover;
+    transition: all 0.1s;
+    margin: 0 auto;
+}
+
+.creador__img:hover{
+    scale: 1.05;
+}
+
+.head .head__p{
+    font-size: 27px;
+}
+
+.head .head__p span{
+    color: #E2CB4C;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    color: #EAEAE8;
+    background-color: #076960;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.foot__p{
+    text-align: center;
+}
+
+@media screen and (min-width: 750px){
+    .head{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .head__container{
+        text-align: center;
+    }
+    .titulos__container .titulos__card{
+        flex-direction: row;
+    }
+    .titulos__container .titulos__card .card__img{
+        min-width: 230px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .menu .fa-bars{
+        display: none;
+    }
+    .menu .menu__ul-responsive{
+        display: none;
+    }
+    .menu .menu__ul{
+        display: flex;
+    }
+    .creador{
+        flex-direction: row;
+    }
+    .creador a{
+        min-width: 370px;
+    }
+    .container2__linea1 .linea1__img, .container2__linea2 .linea2__img, .container2__linea3 .linea3__img{
+        max-width: 350px;
+    }
+
+    .head .head__img{
+        max-width: 650px;
+    }
+
+    .titulos__card .card__img{
+        max-width: 340px;
+    }
+}
